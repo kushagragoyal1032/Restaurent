@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/All_content_item_list"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/counting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_width="0dp"
+            android:layout_weight="5.5"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/menufoodName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food Name"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/menufoodCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs.200"
+                android:textSize="13sp"
+                android:layout_below="@+id/menufoodName"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relative3"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/addButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#E83232"
+                android:text="add"
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    
+    
+    
+</RelativeLayout>

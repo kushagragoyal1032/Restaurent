@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/All_content_history_outer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/line1"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+
+
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_width="0dp"
+            android:layout_weight="3.5"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/restName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restaurant Name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relative3"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/history_order_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16/12/2020"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/All_content_history_outer">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerInRecyclerHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>
+
+
+</RelativeLayout>

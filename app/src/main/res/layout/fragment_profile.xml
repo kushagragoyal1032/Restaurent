@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="fragment.ProfileFragment"
+    android:background="#E36D48">
+
+
+    <ImageView
+        android:id="@+id/ProfileImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:layout_below="@+id/ProfileImage"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/white">
+
+        <TextView
+            android:id="@+id/ProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name of the User"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:layout_gravity="center"/>
+</androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:layout_below="@+id/card1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/white">
+
+        <TextView
+            android:id="@+id/ProfileMob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mob. number of the User"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:layout_below="@+id/card2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/white">
+
+        <TextView
+            android:id="@+id/ProfileEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email of the User"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card4"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:layout_below="@+id/card3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/white">
+
+        <TextView
+            android:id="@+id/ProfileAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add. of the User"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

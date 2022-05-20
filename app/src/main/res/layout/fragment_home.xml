@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragment.HomeFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/searchbarr"
+        android:layout_width="match_parent"
+        android:background="#E1714E"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etsearch_bar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_searchbar"
+            android:textColor="@color/black"
+            android:hint="Search Restaurant"
+            android:textColorHint="#858282"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
+            android:drawablePadding="20dp"
+            android:maxLines="1"
+            android:gravity="left"
+            android:maxLength="30">
+        </EditText>   <RelativeLayout
+        android:id="@+id/ProgressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <ProgressBar
+            android:id="@+id/ProgressBar"
+            android:layout_width="95dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchbarr"/>
+
+
+
+
+</RelativeLayout>

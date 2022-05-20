@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="15dp">
+
+    <LinearLayout
+        android:id="@+id/All_contentFav"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        android:background="#F4F3EA"
+        android:weightSum="6">
+
+        <RelativeLayout
+            android:layout_weight="4.8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/FoodImage"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:src="@drawable/user"/>
+
+            <TextView
+                android:id="@+id/FoodName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food Name"
+                android:layout_toRightOf="@+id/FoodImage"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/FoodPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs 280/person"
+                android:layout_toRightOf="@+id/FoodImage"
+                android:layout_below="@+id/FoodName"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_weight="1.2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/Heart"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_baseline_favorite_24"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Heart"
+                android:layout_centerHorizontal="true"
+                android:text="4.1"
+                android:textStyle="bold"
+                android:textColor="#D8C411"
+                android:layout_marginTop="25dp"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

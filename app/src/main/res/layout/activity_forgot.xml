@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgotActivity"
+    android:background="#E36D48">
+
+
+    <ImageView
+        android:id="@+id/imgSecondLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/newlogo"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/txtStatement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your registered mobile number and email below:"
+        android:layout_below="@id/imgSecondLogo"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="18dp"
+        android:textColor="@drawable/custom_textview"
+        android:clickable="true"
+        android:layout_alignParentLeft="true"
+        android:padding="20dp"/>
+
+    <EditText
+        android:id="@+id/etFMobile"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/txtStatement"
+        android:hint="Mobile Number (10 digits)"
+        android:maxLength="10"
+        android:inputType="phone"
+        android:drawableStart="@drawable/ic_baseline_phone_iphone_24"
+        android:drawablePadding="10dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/custom_input"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#808080"
+
+        />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/etFMobile"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/custom_input"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#808080"/>
+
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEmail"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:text="next"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:backgroundTint="#DC286CA3"/>
+
+    <TextView
+        android:id="@+id/txtPassHaving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Having OTP "
+        android:layout_below="@id/btnNext"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:textSize="15dp"
+        android:textColor="@drawable/custom_textview"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/txtBackLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Login "
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:textSize="15dp"
+        android:textColor="@drawable/custom_textview"
+        android:clickable="true"/>
+
+
+
+
+</RelativeLayout>

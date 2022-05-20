@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgotActivity"
+    android:background="#E36D48">
+
+
+
+    <TextView
+        android:id="@+id/txtStatement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the Received OTP below:"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="18dp"
+        android:textColor="@drawable/custom_textview"
+        android:padding="20dp"/>
+
+    <EditText
+        android:id="@+id/Otp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/txtStatement"
+        android:hint="OTP (4 digits)"
+        android:inputType="number"
+
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/custom_input"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#808080"
+
+        />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/Otp"
+        android:hint="New Password (Min. 4 Characters)"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/custom_input"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#808080"/>
+
+    <EditText
+        android:id="@+id/Password2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/Password"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@drawable/custom_input"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#808080"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Password2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:text="next"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:backgroundTint="#DC286CA3"/>
+
+
+
+
+
+
+</RelativeLayout>
